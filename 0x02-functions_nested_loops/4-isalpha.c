@@ -1,5 +1,5 @@
 #include "main.h"
-/**
+/**i
  * _isalpha- entry point
  * Description : Write a function that checks for lowercase character.
  * @c: check input of function
@@ -7,7 +7,7 @@
 */
 int _isalpha(int c)
 {
-	if (c > 96 && c < 123 || c > 65 && c < 90)
+	if ((c > 96 && c < 123) || (c > 65 && c < 90))
 	{
 		return (1);
 	}
