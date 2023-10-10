@@ -1,5 +1,5 @@
 #include "main.h"
-/**i
+/**
  * _isalpha- entry point
  * Description : Write a function that checks for lowercase character.
  * @c: check input of function
