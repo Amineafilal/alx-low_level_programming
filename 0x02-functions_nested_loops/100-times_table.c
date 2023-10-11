@@ -14,7 +14,7 @@ void print_times_table(int n)
 			_putchar(48);
 			for (mul = 1; mul <= n; mul++)
 			{
-				_prodcalcul = nums * mul;
+				prodcalcul = nums * mul;
 				_putchar(',');
 
 				if (prodcalcul <= 9)
