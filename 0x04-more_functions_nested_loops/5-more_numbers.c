@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  * more_numbers - entry input
  * Description: Write a function that prints 10 times the numbers, from 0 to 14
@@ -21,5 +21,6 @@ void more_numbers(void)
 				_putchar(num + '0');
 			}
 		}
+		_putchar('\n');
 	}
 }
