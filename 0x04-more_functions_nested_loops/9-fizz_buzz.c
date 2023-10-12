@@ -1,9 +1,10 @@
+#include "main.h"
 #include <stdio.h>
 /**
  * main - entry point
- * Description :The “Fizz-Buzz test” is an interview question
- * Return : 0
- */
+ * Description : The Fizz-Buzz test is an interview question.
+ * Return: 0
+*/
 int main(void)
 {
 	int i;
