@@ -17,6 +17,6 @@ int main(void)
 			colfactor--;
 		}
 	}
-	printf("%ld\n",colfactor);
+	printf("%ld\n", colfactor);
 	return (0);
 }
