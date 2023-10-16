@@ -9,7 +9,6 @@
 char *_strcpy(char *dest, char *src)
 {
 	int i;
-	int n = 0;
 	char *ret0 = dest;
 
 	for (n = 0; src[n] != '\0'; n++)
