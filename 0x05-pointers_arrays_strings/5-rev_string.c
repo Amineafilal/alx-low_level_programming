@@ -7,10 +7,11 @@
 void rev_string(char *s)
 {
 	int lenght = 0;
+	int i, j;
 
 	for (lenght = 0; s[lenght] != '\0'; lenght++)
 	{}
-	for (int i = 0; j = lenght - 1; i < j; i++, j--)
+	for (i = 0, j = lenght - 1; i < j; i++, j--)
 	{
 		char temp = s[i];
 
