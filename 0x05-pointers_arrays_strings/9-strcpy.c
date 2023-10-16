@@ -8,15 +8,16 @@
 */
 char *_strcpy(char *dest, char *src)
 {
-	int i, n;
-	char *ret0 = dest + n;
+	int i;
+	int n = 0;
+	char *ret0 = dest;
 
 	for (i = 0; src[n] != '\0'; i++)
 	{}
 	for (i = 0; i <= n; i++)
 	{
 		*dest = src[n];
-		*dest++;
+		dest++;
 	}
 	return (ret0);
 }
