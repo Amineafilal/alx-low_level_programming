@@ -4,8 +4,10 @@
  * @o: input
  * Return: Return the value of o
 */
-char *string_toupper(char *o)
+char *string_toupper(char *)
 {
+	char o;
+
 	for (int i = 0; o[i] != '\0'; i++)
 	{
 		if (o[i] >= 97 && o[i] <= 122)
