@@ -6,9 +6,10 @@
 */
 char *cap_string(char *o)
 {
+	int i;
 	int sep = 1;
 
-	for (int i = 0; o[i] != '\0'; i++)
+	for (i = 0; o[i] != '\0'; i++)
 	{
 		if (sep && ((o[i] >= 97 && o[i] <= 122) || (o[i] >= 65 && o[i] <= 90)))
 		{
