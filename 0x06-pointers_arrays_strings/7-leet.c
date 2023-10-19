@@ -11,7 +11,7 @@ char *leet(char *o)
 	char *replace = o;
 	unsigned int i;
 
-	while(*o)
+	while (*o)
 	{
 		for (i = 0; i < sizeof(c) / sizeof(char); i++)
 		{
