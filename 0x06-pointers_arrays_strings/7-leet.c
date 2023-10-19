@@ -11,7 +11,7 @@ char *leet(char *o)
 	char *replace = o;
 	unsigned int i;
 
-	for (; *ig; o++)
+	while(*o)
 	{
 		for (i = 0; i < sizeof(c) / sizeof(char); i++)
 		{
@@ -20,6 +20,7 @@ char *leet(char *o)
 				*o = 48 + n[i];
 			}
 		}
+		o++;
 	}
 	return (replace);
 }
