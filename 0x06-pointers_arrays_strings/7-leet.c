@@ -9,9 +9,9 @@ char *leet(char *o)
 	int n[] = {4, 3, 0, 7, 1};
 	char c[] = {'A', 'E', 'O', 'T', 'L'};
 	char *replace = o;
-	int i;
+	unsigned int i;
 
-	for (; *o; o++)
+	for (; *ig; o++)
 	{
 		for (i = 0; i < sizeof(c) / sizeof(char); i++)
 		{
