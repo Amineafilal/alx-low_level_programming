@@ -3,19 +3,25 @@
  * *rot13 - Write a function that encodes a string using rot13.
  * @o: input
  * Return: Return the value of o
-*/
+ */
 char *rot13(char *o)
 {
-	char *start = o;
+	int i;
+	char R13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char r13[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char *rpl = o;
 
 	while (*o)
 	{
-		if ((*o >= 97 && *o <= 122) || (*o >= 65 && *o <= 90))
+		for (i = 0; i <= 52; i++)
 		{
-			char base = (*o >= 97 && *o <= 122) ? 97 : 65;
-			*o = (*o - base + 13) % 26 + base;
+			if (*o == r13[i])
+			{
+				*o = R13[i];
+				break;
+			}
 		}
 		o++;
 	}
-	return (start);
+	return (rpl);
 }
