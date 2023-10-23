@@ -8,7 +8,6 @@
 char *_strpbrk(char *s, char *accept)
 {
 	int j;
-	char *ps = s;
 
 	while (*s)
 	{
@@ -21,5 +20,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 		s++;
 	}
-	return  (ps);
+	return  ('\0');
 }
