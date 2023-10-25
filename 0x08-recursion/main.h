@@ -21,5 +21,6 @@ void _puts_recursion(char *s);
  int is_prime(int n, int start);
  int find_strlen(char *s);
  int check_palindrome(char *s, int len, int index);
+ int _putchar(char c);
 
 #endif /* MAIN_H */
