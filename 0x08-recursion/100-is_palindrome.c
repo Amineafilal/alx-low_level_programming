@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
  * find_lenght - size of string.
  * @s: input value.
