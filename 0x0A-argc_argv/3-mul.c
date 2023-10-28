@@ -12,7 +12,6 @@ int main(int argc, char *argv[])
 {
 	int multip;
 
-	i
 	if (argc != 3)
 	{
 		printf("Error\n");
@@ -22,6 +21,7 @@ int main(int argc, char *argv[])
 	{
 		multip =  atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", multip);
+		return (0);
 	}
 	return (0);
 }
