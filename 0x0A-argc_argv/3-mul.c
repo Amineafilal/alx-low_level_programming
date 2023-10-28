@@ -12,7 +12,6 @@ int main(int argc, char *argv[])
 {
 	int multip;
 
-	multip = 0;
 	if (argc != 3)
 	{
 		printf("Error\n");
