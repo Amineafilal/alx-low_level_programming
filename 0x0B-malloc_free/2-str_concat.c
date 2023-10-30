@@ -29,9 +29,9 @@ char *str_concat(char *s1, char *s2)
 		lenght2++;
 	}
 	result = (char *)malloc(sizeof(char) * (lenght + lenght2 + 1));
-	if (result == 0)
+	if (result == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 	for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
 	{
