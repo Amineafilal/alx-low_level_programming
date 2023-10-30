@@ -8,7 +8,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	int i, lenght, lenght2;
-	char *result = 0;
+	char *result;
 
 	lenght = 0;
 	lenght2 = 0;
