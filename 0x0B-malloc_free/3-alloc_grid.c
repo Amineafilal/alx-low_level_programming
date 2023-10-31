@@ -4,33 +4,29 @@
  * @width: input value
  * @height: input value
  * Return: Return value of gridp.
-*/
+ */
 int **alloc_grid(int width, int height)
 {
-	int **gridp = 0;
-	int *data = NULL;
 	int i, j;
+	int **arr;
 
 	if (width <= 0 || height <= 0)
-	{
 		return (NULL);
-	}
-	gridp = (int **)malloc(sizeof(int *) * height + sizeof(int) * width * height);
-	if (gridp == NULL)
-	{
+	arr = (int **)malloc(sizeof(int *) * height);
+	if (arr == NULL)
 		return (NULL);
-	}
-	data = (int *)(gridp + height);
-	for (i = 0; i < height; i++)
+	for (i = 0; i < width; i++)
 	{
-		gridp[i] = data + i * width;
-	}
-	for (i = 0; i < height ; i++)
-	{
-		for (j = 0; j < width; j++)
+		arr[i] = (int *) malloc(sizeof(int) * width);
+		if (arr[i] == 0)
 		{
-			gridp[i][j] = 0;
+			for (j = 0; j <= i; j++)
+				free(arr[j]);
 		}
 	}
-	return (gridp);
+	for (i = 0, j = 0; i < width; i++, j++)
+	{
+		arr[i][j] = 0;
+	}
+	return (arr);
 }
