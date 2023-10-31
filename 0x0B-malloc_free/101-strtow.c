@@ -1,6 +1,22 @@
 #include "main.h"
 
 /**
+ * l - returns length of str
+ * @str: string to be counted
+ * Return: length of the string
+*/
+int l(char *str)
+{
+	int len = 0;
+
+	if (str != NULL)
+	{
+		while (str[len])
+			len++;
+	}
+	return (len);
+}
+/**
  * w_c - counts the number of words in str
  * @str: string to be used
  * Return: number of words
@@ -26,23 +42,6 @@ int w_c(char *str)
 		}
 	}
 	return (words);
-}
-/**
- * l - returns length of str
- * @str: string to be counted
- * Return: length of the string
-*/
-
-int l(char *str)
-{
-	int len = 0;
-
-	if (str != NULL)
-	{
-		while (str[len])
-			len++;
-	}
-	return (len);
 }
 /**
  * **strtow - splits a stirng into words
