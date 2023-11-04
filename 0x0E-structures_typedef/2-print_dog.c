@@ -19,7 +19,7 @@ void print_dog(struct dog *d)
 	}
 	if (d->age < 0)
 	{
-		printf("nil\n");
+		printf(0.0);
 	}
 	else
 	{
