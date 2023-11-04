@@ -1,0 +1,6 @@
+#ifndef OBJECTIF_LIKE_MARCO_H
+#define OBJECTIF_LIKE_MARCO_H
+
+#define SIZE 1024
+
+#endif
