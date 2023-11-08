@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*
+/**
  * print_opcodes - Write a program that prints the opcodes.
  * @code: Pointer to the array of opcodes (bytes).
  * @size: Number of bytes to print from the opcodes.
@@ -22,11 +22,11 @@ void print_opcodes(unsigned char *code, int size)
 		}
 	}
 }
-/*
- * main - Write a function if the programIt retrieves and-line arguments.
+/**
+ * main - Entry point of the program.
+ * @argc: Number of command-line arguments.
  * @argv: Array of command-line argument strings.
- * @argc: integer variable that holds the number of command-line.
- * Returns: return 0 on success, 1 or 2 in case of errors.
+ * Return: return the value of 0.
 */
 int main(int argc, char *argv[])
 {
