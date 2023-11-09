@@ -24,7 +24,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			printf("%s", chainestring);
 		}
-		printf("%s", chainestring);
 		if (separator != NULL && i < (n - 1))
 		{
 			printf("%s", separator);
