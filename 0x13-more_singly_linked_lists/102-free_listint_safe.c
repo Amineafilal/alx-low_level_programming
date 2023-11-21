@@ -20,10 +20,10 @@ size_t free_listint_safe(listint_t **h)
 		count++;
 		next_node = current;
 		current = current->next;
-		if (next_node->next >= next_node)
+		if (next_node->next == NULL)
 		{
-			*h = NULL;
-			return (count);
+			free(next_node);
+			break;
 		}
 		next_node->next = next_node;
 		free(next_node);
