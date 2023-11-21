@@ -3,20 +3,19 @@
 /**
  * print_listint_safe - Write a function that prints a listint_t linked list.
  * @head: a pointer to a singly linked list node structure.
- * Return: return the pointer to the first node.
+ * Return: return the pointer to the first node .
 */
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *current;
+	const listint_t *current = head;
 	const listint_t *loop_node = NULL;
 	size_t count = 0;
 
-	if (head == NULL)
+	if (current == NULL)
 	{
 		printf("NULL\n");
 		exit(98);
 	}
-	current = head;
 	while (current != NULL)
 	{
 		printf("[%p] %d\n", (void *)current, current->n);
@@ -29,5 +28,6 @@ size_t print_listint_safe(const listint_t *head)
 		}
 		current = current->next;
 	}
+	free(loop_node);
 	return (count);
 }
