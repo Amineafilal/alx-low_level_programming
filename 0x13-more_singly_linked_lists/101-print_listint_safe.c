@@ -28,6 +28,5 @@ size_t print_listint_safe(const listint_t *head)
 		}
 		current = current->next;
 	}
-	free(loop_node);
 	return (count);
 }
