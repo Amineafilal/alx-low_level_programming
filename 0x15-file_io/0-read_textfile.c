@@ -4,24 +4,30 @@
  * @filename: input value.
  * @letters: input value.
  * Return: return value value of the actual number of letters.
-*/
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd;
-	ssize_t b;
-	char *buffer[READ_BUF_SIZE * 8];
+	int fd, r, w, o;
+	char *buffer;
 
-	if (!filename || !letters)
+	if (filename == NULL)
 	{
 		return (0);
 	}
-	fd = open(filename, O_RDONLY);
-	if (fd == -1)
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
 	{
 		return (0);
 	}
-	b = read(fd, &buffer[0], letters);
-	b = write(STDOUT_FILENO, &buffer[0], b);
-	close(fd);
-	return (b);
+	o = open(filename, O_RDONLY);
+	r = read(fd, buffer, letters);
+	w = write(STDOUT_FILENO, buffer, r);
+	if (o == -1 || r == -1 || w != r)
+	{
+		free(buffer);
+		return(0);
+	}
+	close(o);
+	free(buffer);
+	return (w);
 }
