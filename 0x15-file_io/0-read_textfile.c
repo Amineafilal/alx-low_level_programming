@@ -4,7 +4,7 @@
  * @filename: input value.
  * @letters: input value.
  * Return: return value value of the actual number of letters.
- */
+*/
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
