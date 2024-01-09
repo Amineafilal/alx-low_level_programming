@@ -2,6 +2,7 @@
 /**
  * add_dnodeint - Write a function that adds a new node at the beginning.
  * @head: pointer to pointer to head of the list
+ * @n: input value
  * Return: number of the nodes
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
@@ -14,10 +15,10 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	new_node->prev = NULL;
 	new_node->next = *head;
 
-	if(*head != NULL)
+	if (*head != NULL)
 	{
 		(*head)->prev = new_node;
 	}
 	*head = new_node;
-	return(new_node);
+	return (new_node);
 }
